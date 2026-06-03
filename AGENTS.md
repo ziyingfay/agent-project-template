@@ -18,6 +18,8 @@ You are the project manager, developer, tester, and documentation maintainer for
 | `dev/temp/` | Temporary workspace | Safe to clean |
 | `outputs/` | Client/user-facing deliverables | Keep separate from code and temporary files |
 
+For second-level folder rules, cleanup rules, and naming rules, follow `dev/docs/文件管理规范.md`.
+
 ## Start-Of-Task Checklist
 
 Before substantial work:
@@ -27,7 +29,8 @@ Before substantial work:
 3. Read the newest `dev/notes/work-log-*.md` if present.
 4. Check `dev/docs/问题跟踪.md` for Open or In Progress issues.
 5. If the task touches a skill, read the relevant `skills/<skill-name>/SKILL.md` or `dev/docs/Skill开发说明.md`.
-6. Make a short plan when the work has multiple steps.
+6. If creating, moving, or cleaning files, read `dev/docs/文件管理规范.md`.
+7. Make a short plan when the work has multiple steps.
 
 ## End-Of-Task Checklist
 
@@ -55,6 +58,7 @@ If documents conflict, prefer the single source of truth and update stale docume
 - Prefer existing project patterns and helper scripts.
 - Do not guess paths; verify files and directories before operating.
 - Keep deliverable code separate from reference material and temporary files.
+- Use the standard filename format: `YYYYMMDD-关联ID-类型-简短说明-v版本号.ext`.
 - Record why important choices were made, not only what changed.
 - Ask the user only when a decision cannot be inferred safely.
 
@@ -70,3 +74,9 @@ Most projects here are small personal or 1-3 person projects, often focused on A
 6. Review - update project state, work log, decisions, issues, and next steps.
 
 Do not force a heavy stage-gate process for small tasks. Pause for user confirmation after Intent, before large rewrites, and before packaging/release. For tiny edits, proceed and document the result.
+
+## Cleanup Rules
+
+- Safe to clean after review: `dev/temp/scratch/`, `dev/temp/test-runs/`, old files in `outputs/test-results/`, stale files in `outputs/drafts/`, obsolete `app/prototypes/`, obsolete `skills/drafts/`.
+- Do not clean without explicit confirmation: `skills/active/`, `skills/examples/`, `skills/test-fixtures/`, `outputs/final/`, `outputs/samples/`, `reference/requirements/`, `reference/source-materials/`, `dev/docs/`, `dev/notes/`.
+- When unsure, move files to the nearest `archive/` folder instead of deleting.

@@ -43,15 +43,37 @@ ProjectName/
 ├── AGENTS.md
 ├── README.md
 ├── skills/
+│   ├── active/
+│   ├── drafts/
+│   ├── examples/
+│   ├── test-fixtures/
+│   └── archive/
 ├── app/
+│   ├── src/
+│   ├── prototypes/
+│   ├── tests/
+│   └── archive/
 ├── reference/
+│   ├── requirements/
+│   ├── source-materials/
+│   ├── research/
+│   ├── examples/
+│   └── archive/
 ├── dev/
 │   ├── docs/
 │   ├── notes/
 │   │   └── chat-log/
 │   ├── scripts/
 │   └── temp/
+│       ├── scratch/
+│       ├── drafts/
+│       └── test-runs/
 └── outputs/
+    ├── final/
+    ├── drafts/
+    ├── samples/
+    ├── test-results/
+    └── archive/
 ```
 
 ## Best Fit
@@ -66,6 +88,24 @@ This template is designed for small Codex-assisted projects:
 ## Principle
 
 `AGENTS.md` tells Codex how to work. `dev/current-state.md` tells Codex where the project currently stands. `dev/` keeps project memory. `reference/` keeps background material. `skills/` keeps Agent skills. `app/` is optional for supporting web apps or demos. `outputs/` keeps external deliverables.
+
+## Lightweight File Management
+
+Use `dev/docs/文件管理规范.md` as the source of truth for file placement, cleanup, and naming.
+
+Recommended filename:
+
+```text
+YYYYMMDD-关联ID-类型-简短说明-v版本号.ext
+```
+
+Example:
+
+```text
+20260603-T001-test-result-chat-logger-v01.md
+20260603-TASK002-draft-skill-spec-imagegen-v02.md
+20260603-FINAL-final-skill-package-chat-logger-v01.zip
+```
 
 ## Who Reads What
 

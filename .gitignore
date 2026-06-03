@@ -2,6 +2,14 @@
 
 dev/temp/*
 !dev/temp/.gitkeep
+!dev/temp/README.md
+!dev/temp/*/
+dev/temp/*/*
+!dev/temp/*/.gitkeep
 
 outputs/*
 !outputs/.gitkeep
+!outputs/README.md
+!outputs/*/
+outputs/*/*
+!outputs/*/.gitkeep
