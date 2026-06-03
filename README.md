@@ -1,5 +1,7 @@
 # Codex Project Bootstrap
 
+AI coding project management skills and templates, including workflow, workspace organization, project memory, logs, and lightweight Agent skill development process.
+
 This folder is a reusable project setup template for Codex-assisted projects.
 
 ## How To Use
