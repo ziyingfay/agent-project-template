@@ -20,6 +20,21 @@ Then edit:
 - `dev/docs/项目管理文档.md` for project-specific workflow
 - `dev/docs/需求变更日志.md` for decisions and requirement changes
 
+  ## 在 Trae 或本地电脑里使用
+
+git clone https://github.com/ziyingfay/agent-project-template.git
+cd agent-project-template
+
+在 Trae 里使用
+
+在 Trae 里打开 clone 下来的项目文件夹。
+让 AI 先阅读：
+README.md
+AGENTS.md
+dev/current-state.md
+然后对 AI 说：
+请根据 AGENTS.md 和 dev/current-state.md 接管这个项目，并从 Intent 阶段开始帮我创建一个新的 Agent
+
 ## Structure
 
 ```text
