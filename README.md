@@ -92,6 +92,7 @@ This template is designed for small Codex-assisted projects:
 ## Lightweight File Management
 
 Use `dev/docs/文件管理规范.md` as the source of truth for file placement, cleanup, and naming.
+The built-in `skills/active/project-management/` skill applies these rules when organizing files, naming outputs, testing, packaging, archiving, or cleaning a project.
 
 Recommended filename:
 
@@ -113,6 +114,7 @@ Example:
 |------|-------------|---------|
 | `README.md` | Humans | Explains what this project is, how to use it, and how the workflow works |
 | `AGENTS.md` | Codex / AI Agent | Defines the working rules Codex should follow |
+| `skills/active/project-management/SKILL.md` | Codex / AI Agent | Project management skill that operationalizes workflow and file management |
 | `dev/current-state.md` | Humans + Codex | Records the current phase, focus, completed work, and next step |
 | `dev/docs/*` | Humans + Codex | Stores decisions, issues, tests, milestones, and skill design notes |
 
@@ -189,7 +191,7 @@ flowchart TD
 
     O --> P
     P --> Q["Design skill triggers, inputs, outputs, workflow"]
-    Q --> R["Create skills/<skill-name>/"]
+    Q --> R["Create skills/active/<skill-name>/"]
     R --> S["Write SKILL.md, scripts, examples"]
     S --> T["Test samples"]
     T --> U["Update current-state, work log, and change log"]

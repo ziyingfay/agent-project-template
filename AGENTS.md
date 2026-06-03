@@ -28,9 +28,10 @@ Before substantial work:
 2. Read the latest entries in `dev/docs/需求变更日志.md`.
 3. Read the newest `dev/notes/work-log-*.md` if present.
 4. Check `dev/docs/问题跟踪.md` for Open or In Progress issues.
-5. If the task touches a skill, read the relevant `skills/<skill-name>/SKILL.md` or `dev/docs/Skill开发说明.md`.
-6. If creating, moving, or cleaning files, read `dev/docs/文件管理规范.md`.
-7. Make a short plan when the work has multiple steps.
+5. If the task touches a skill, read the relevant `skills/active/<skill-name>/SKILL.md` or `dev/docs/Skill开发说明.md`.
+6. If starting, organizing, packaging, reviewing, or cleaning a project, read `skills/active/project-management/SKILL.md`.
+7. If creating, moving, or cleaning files, read `dev/docs/文件管理规范.md`.
+8. Make a short plan when the work has multiple steps.
 
 ## End-Of-Task Checklist
 
@@ -50,6 +51,7 @@ Before finishing:
 - Test results: `dev/docs/测试记录.md`
 - Current phase and next action: `dev/current-state.md`
 - Recent work context: `dev/notes/work-log-*.md`
+- Project and file management workflow: `skills/active/project-management/SKILL.md`
 
 If documents conflict, prefer the single source of truth and update stale documents.
 

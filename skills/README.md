@@ -10,6 +10,10 @@ Agent skill 的主要交付区。
 | `test-fixtures/` | 测试输入和测试夹具 |
 | `archive/` | 旧版本和废弃版本 |
 
+内置管理 skill：
+
+- `active/project-management/`：项目管理、文件管理、状态恢复、测试记录和归档规则。
+
 命名建议：
 
 ```text

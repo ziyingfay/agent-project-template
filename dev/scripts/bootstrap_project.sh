@@ -20,6 +20,7 @@ mkdir -p "$PROJECT_NAME"/dev/temp/{scratch,drafts,test-runs}
 cp "$TEMPLATE_ROOT/AGENTS.md" "$PROJECT_NAME/AGENTS.md"
 cp "$TEMPLATE_ROOT/README.md" "$PROJECT_NAME/README.md"
 cp "$TEMPLATE_ROOT/skills/README.md" "$PROJECT_NAME/skills/README.md"
+cp -R "$TEMPLATE_ROOT/skills/active/." "$PROJECT_NAME/skills/active/"
 cp "$TEMPLATE_ROOT/app/README.md" "$PROJECT_NAME/app/README.md"
 cp "$TEMPLATE_ROOT/reference/README.md" "$PROJECT_NAME/reference/README.md"
 cp "$TEMPLATE_ROOT/outputs/README.md" "$PROJECT_NAME/outputs/README.md"

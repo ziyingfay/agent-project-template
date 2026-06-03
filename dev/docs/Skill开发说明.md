@@ -23,7 +23,7 @@
 |------|--------------|------|
 | Intent | 为什么做？谁用？成功标准是什么？不做什么？ | 需求简表 |
 | Skill Design | 什么时候触发？怎么执行？输入输出是什么？ | skill spec |
-| Build | 文件如何组织？脚本如何运行？示例在哪里？ | `skills/<skill-name>/` |
+| Build | 文件如何组织？脚本如何运行？示例在哪里？ | `skills/active/<skill-name>/` |
 | Test | 用哪些真实任务验证？失败怎么记录？ | 测试记录 |
 | Package | 如何复制、安装、交付？ | README、示例、输出 |
 | Review | 哪些经验要沉淀？下一步是什么？ | 当前状态、工作日志 |
@@ -63,14 +63,15 @@
 1. 恢复上下文
 2. 检查输入
 3. 读取必要参考资料
-4. 执行核心任务
-5. 验证输出
-6. 更新日志和状态
+4. 按 `文件管理规范.md` 确认产物保存位置和命名
+5. 执行核心任务
+6. 验证输出
+7. 更新日志和状态
 
 ## 6. 文件结构
 
 ```text
-skills/<skill-name>/
+skills/active/<skill-name>/
 ├── SKILL.md
 ├── scripts/
 ├── references/
@@ -89,6 +90,15 @@ skills/<skill-name>/
 - 不处理：
 - 需要用户确认：
 - 可能失败：
+
+## 9. 文件管理
+
+- 草稿保存到：`skills/drafts/` 或 `outputs/drafts/`
+- 当前样例保存到：`skills/examples/` 或 `outputs/samples/`
+- 测试输入保存到：`skills/test-fixtures/`
+- 测试结果保存到：`outputs/test-results/`
+- 最终产物保存到：`outputs/final/`
+- 命名格式：`YYYYMMDD-关联ID-类型-简短说明-v版本号.ext`
 ~~~
 
 ---
@@ -128,3 +138,5 @@ description: <什么时候使用这个 skill>
 - 测试不只看脚本能否运行，还要看输出是否符合用户工作流。
 - 失败时先记录到 `问题跟踪.md`，再修复。
 - 通过后记录到 `测试记录.md`。
+- 测试产物放入 `outputs/test-results/`；测试输入放入 `skills/test-fixtures/`。
+- 当前可展示样例放入 `outputs/samples/` 或 `skills/examples/`，不要混在临时目录里。
